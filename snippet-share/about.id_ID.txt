@@ -1,0 +1,27 @@
+Title: Berbagi Potongan Kode
+Author: Taufik Nurrohman
+URL: http://latitudu.com
+Version: 1.0.0
+
+====
+
+> Bagikan potongan kode Anda sebagai halaman/berkas tunggal.
+
+#### Tautan Permanen
+
+ - `/s/print:file-1234` → memetakan ke `/assets/__snippet/txt/file-1234.txt`
+ - `/s/print:path/to/file-1234` → memetakan ke `/assets/__snippet/txt/path/to/file-1234.txt`
+ - `/s/include:file-1234` → memetakan ke `/assets/__snippet/php/file-1234.php`
+ - `/s/include:path/to/file-1234` → memetakan ke `/assets/__snippet/php/path/to/file-1234.php`
+~~~
+
+#### Pilihan
+
+ - `/s/print:file-1234?brush=css` → menerapkan pewarna kode CSS pada kode sumber
+ - `/s/print:file-1234?brush=false` → menonaktifkan pewarna kode
+ - `/s/print:file-1234?raw=1` → tampilkan kode sumber sebagai berkas teks mentah
+ - `/s/print:file-1234?file=1` → paksa untuk mengunduh halaman sebagai berkas potongan
+
+<!-- block:donate -->
+
+*[CSS]: Cascading Style Sheet
