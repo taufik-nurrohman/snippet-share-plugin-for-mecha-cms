@@ -1,7 +1,7 @@
 Code Snippet Share Plugin for Mecha CMS
 =======================================
 
-> Share your snippet data as as stand–alone page/file.
+> Share your snippet data as a stand–alone page/file.
 
 #### Permanent Link
 

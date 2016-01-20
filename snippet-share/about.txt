@@ -1,11 +1,11 @@
 Title: Code Snippet Share
 Author: Taufik Nurrohman
 URL: http://latitudu.com
-Version: 1.0.0
+Version: 1.0.1
 
 ====
 
-> Share your snippet data as as stand–alone page/file.
+> Share your snippet data as a stand–alone page/file.
 
 #### Permanent Link
 

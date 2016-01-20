@@ -31,8 +31,8 @@ echo str_repeat(TAB, 2) . Asset::javascript(array(
 ));
 if($brush !== false) {
     echo str_repeat(TAB, 2) . Asset::javascript($_ . 'sword' . DS . 'brush' . DS . 'generic.min.js');
-    if($brush !== 'generic') {
-        echo str_repeat(TAB, 2) . Asset::javascript($_ . 'sword' . DS . 'brush' . DS . $brush . '.min.js');
+    if($brush !== 'generic' && $f = File::exist($_ . 'sword' . DS . 'brush' . DS . $brush . '.min.js')) {
+        echo str_repeat(TAB, 2) . Asset::javascript($f);
     }
 }
 echo TAB . '</body>' . NL;
