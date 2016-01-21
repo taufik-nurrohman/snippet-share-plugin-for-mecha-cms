@@ -16,12 +16,12 @@ Route::accept('s/(print|include):(:all)', function($x = "", $path = "") use($con
         Shield::abort();
     }
     $content = File::open($snippet)->read();
-    // Allow to run `v?sprintf` in snippet content for `txt` file
+    // Allow to run `printf` in snippet content for `txt` file
     if($x === 'txt') {
         $lot = isset($get['lot']) ? explode(',', $get['lot']) : false;
         if($lot !== false && strpos($content, '%') !== false) {
             // `http://stackoverflow.com/a/2053931`
-            if(preg_match_all('#%(?:(\d+)[$])?[-+]?(?:[ 0]|[\'].)?(?:[-]?\d+)?(?:[.]\d+)?[%bcdeEufFgGosxX]#', $content, $matches)) {
+            if(preg_match_all('#%(?:(\d+)[$])?[-+]?(?:[ 0]|[\'].)?(?:[-]?\d+)?(?:[.]\d+)?[%bcdeEfFgGosuxX]#', $content, $matches)) {
                 $lot = Mecha::walk($lot, function($v) {
                     return str_replace('&#44;', ',', $v);
                 });
@@ -33,8 +33,8 @@ Route::accept('s/(print|include):(:all)', function($x = "", $path = "") use($con
     }
     // Apply `do_snippet` filter if available
     if(function_exists('do_snippet')) {
-        // Allow nested snippet(s) three time(s)
-        $content = do_snippet(do_snippet(do_snippet($content)));
+        // Allow nested snippet(s) two time(s)
+        $content = do_snippet(do_snippet($content));
     }
     // Apply all post content filter to the snippet output
     $filters = array();

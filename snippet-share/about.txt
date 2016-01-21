@@ -1,7 +1,7 @@
 Title: Code Snippet Share
 Author: Taufik Nurrohman
 URL: http://latitudu.com
-Version: 1.0.1
+Version: 1.0.2
 
 ====
 
@@ -20,6 +20,7 @@ Version: 1.0.1
  - `/s/print:file-1234?brush=false` → disable syntax highlighter
  - `/s/print:file-1234?raw=1` → output the source code as a plain text file
  - `/s/print:file-1234?file=1` → force to download the page as a snippet file
+ - `/s/print:file-1234?lot=foo,bar` → allow to run `printf` in snippet (applies only to `txt`)
 
 <!-- block:donate -->
 

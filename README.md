@@ -16,3 +16,4 @@ Code Snippet Share Plugin for Mecha CMS
  - `/s/print:file-1234?brush=false` → disable syntax highlighter
  - `/s/print:file-1234?raw=1` → output the source code as a plain text file
  - `/s/print:file-1234?file=1` → force to download the page as a snippet file
+ - `/s/print:file-1234?lot=foo,bar` → allow to run `printf` in snippet (applies only to `txt`)
