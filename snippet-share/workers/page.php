@@ -1,6 +1,6 @@
 <?php
 
-$brush = Request::get('brush', 'generic');
+$brush = Request::get('brush', $x === 'php' ? 'php' : 'generic');
 $brush = Text::parse($brush, '->text');
 if(is_numeric($brush) && $brush <= 0) $brush = false;
 $_ = File::D(__DIR__) . DS . 'assets' . DS;
