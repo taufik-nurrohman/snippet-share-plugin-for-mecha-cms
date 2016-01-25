@@ -21,7 +21,7 @@ Version: 1.0.2
  - `/s/print:file-1234?brush=false` → menonaktifkan pewarna kode
  - `/s/print:file-1234?raw=1` → tampilkan kode sumber sebagai berkas teks mentah
  - `/s/print:file-1234?file=1` → paksa untuk mengunduh halaman sebagai berkas potongan
- - `/s/print:file-1234?lot=foo,bar` → memungkinkan untuk mengeksekusi `printf` pada potongan (hanya berlaku untuk `txt`)
+ - `/s/print:file-1234?lot=foo,bar` → memungkinkan untuk menjalankan perintah `printf` pada konten potongan (hanya berlaku untuk `txt`)
 
 <!-- block:donate -->
 
