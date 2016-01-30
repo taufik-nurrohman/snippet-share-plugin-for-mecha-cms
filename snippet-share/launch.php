@@ -1,6 +1,6 @@
 <?php
 
-Route::accept('s/(print|include):(:all)', function($x = "", $path = "") use($config, $speak) {
+Route::accept('s/(print|include)(:|/)(:all)', function($x = "", $o = ':', $path = "") use($config, $speak) {
     $path = ltrim(File::path($path), DS);
     $get = Request::get();
     $x = Mecha::alter($x, array(
