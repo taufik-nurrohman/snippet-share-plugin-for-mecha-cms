@@ -36,4 +36,4 @@ if($brush !== false) {
     }
 }
 echo TAB . '</body>' . NL;
-echo '</html>' . NL;
+echo '</html>';
